@@ -7,7 +7,7 @@ char* StringCopy(const char *source) {
         return NULL; // Handle null input gracefully
     }
 
-    // 1. Calculate length of source string
+    // Calculate length of source string
     int length = 0;
     const char *temp = source;
     while (*temp != '\0') {
@@ -15,19 +15,19 @@ char* StringCopy(const char *source) {
         temp++;
     }
 
-    // 2. Allocate memory for destination string (length + 1 for '\0')
+    // Allocate memory for destination string (length + 1 for '\0')
     char *dest = (char*)malloc((length + 1) * sizeof(char));
     if (dest == NULL) {
         fprintf(stderr, "Memory allocation failed!\n");
         return NULL; // Allocation failed, return NULL
     }
 
-    // 3. Copy characters from source to destination
+    // Copy characters from source to destination
     for (int i = 0; i < length; i++) {
         dest[i] = source[i];
     }
 
-    // 4. Add null terminator
+    // Add null terminator
     dest[length] = '\0';
 
     return dest; // Return pointer to newly allocated string

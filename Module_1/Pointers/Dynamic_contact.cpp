@@ -11,9 +11,7 @@ typedef struct {
 
 
 /*  FUNCTION DEFINITIONS  */
-
 Contact* addContact(Contact* contacts_array, int* current_size, const Contact* new_contact) {
-
     /* First contact: use malloc */
     if (contacts_array == NULL) {
         contacts_array = (Contact*)malloc(sizeof(Contact));
