@@ -35,6 +35,12 @@ char* StringCopy(const char *source) {
 
 int main() {
     // Test strings of various lengths
+    char arr[3][20] = { "Hello","World","C Language"};
+    for (int i = 0; i < 3; i++) {
+    char *copy = StringCopy(arr[i]);
+    printf("Copied: %s\n", copy);
+    free(copy);
+    }
     const char *str1 = "Hello, World!";
     const char *str2 = "Dynamic string copy in C.";
     const char *str3 = ""; // Empty string
