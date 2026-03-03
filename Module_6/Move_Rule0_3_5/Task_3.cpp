@@ -1,5 +1,6 @@
 #include<iostream>
 #include<cstring>
+#include <utility> 
 using namespace std;
 
 class MyString{
