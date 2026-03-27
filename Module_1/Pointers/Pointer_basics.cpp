@@ -17,7 +17,6 @@ int main() {
     // Prompt user for input
     printf("Enter your preferred theme color code: ");
     scanf("%d", pThemeColorCode);
-
     
     // Print final theme color code
     printf("The final theme color code is: %d\n", *pThemeColorCode);

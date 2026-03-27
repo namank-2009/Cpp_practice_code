@@ -50,6 +50,7 @@ void selectionSort(int arr[], int size) {
 }
 
 /* Comparator function for qsort */
+//void*  → generic pointer (kisi bhi type ka address hold kar sakta hai)
 int compare(const void* a, const void* b) {
     return (*(int*)a - *(int*)b);
 }

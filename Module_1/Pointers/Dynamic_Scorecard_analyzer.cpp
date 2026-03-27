@@ -66,7 +66,7 @@ int main(){
     }while(*numGames<=0);
 
     int* inningScores = (int*)malloc((*numGames) * sizeof(int));
-     if (inningScores == NULL) {
+    if (inningScores == NULL) {
         printf("Memory allocation failed!\n");
         free(numGames);
         return 1;

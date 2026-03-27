@@ -14,7 +14,7 @@ int main(){
    fp = fopen("employee.dat", "rb");
     if (fp == NULL) {
         printf("Error: employee.dat file not found!\n");
-        return;
+        return 1;
     }
 
     while (fread(&e, sizeof(struct Employee), 1, fp)) {

@@ -5,7 +5,7 @@ using namespace std;
 
 /* Function to compute factorial iteratively using previous factorial */
 long long factorial(int n, long long prevFact) {
-     if(n==0) return 1; // handle base case
+    if(n==0) return 1; // handle base case
     return prevFact * n;
 }
 
