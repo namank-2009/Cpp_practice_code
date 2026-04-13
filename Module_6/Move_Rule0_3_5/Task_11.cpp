@@ -33,12 +33,12 @@ int main() {
 
     std::cout << "\n-- push_back(a) (copy): --" << std::endl;
     vec.push_back(a);         // Calls copy constructor
-
     std::cout << "\n-- push_back(std::move(b)) (move): --" << std::endl;
     vec.push_back(std::move(b)); // Calls move constructor
 
     std::cout << "\n-- emplace_back(\"temp\"): --" << std::endl;
     vec.emplace_back("temp"); // Constructs in-place (calls direct constructor)
+    
 
     std::cout << "\n-- End of main (destructors fire) --" << std::endl;
     return 0;

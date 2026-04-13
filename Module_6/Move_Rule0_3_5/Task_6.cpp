@@ -32,6 +32,7 @@ public:
         std::cout << "Destructor: freeing " << static_cast<void*>(data) << std::endl;
         delete[] data;
     }
+    
     void print(const char* label) const {
         std::cout << label << " data at " << static_cast<const void*>(data) << ": [ ";
         for (size_t i = 0; i < size; ++i) std::cout << data[i] << " ";

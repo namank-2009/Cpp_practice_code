@@ -9,11 +9,7 @@ class Number{
   public:
   // Using initializer list to copy the value to data
   // initializer list help to take multiple value to the constructor
-  Number(std::initializer_list<int>list){
-    for(auto val:list){
-        data.push_back(val);
-    }
-  }  
+  Number(std::initializer_list<int>list):data(list){}  
 
 // print function
   void print(){

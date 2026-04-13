@@ -17,6 +17,7 @@ int main(){
     cout<<"Modified the value of x using *p via pointer\n";
     cout<<"The value of x: "<<x<<endl;
     cout<<"The value of *p: "<<*p<<endl;
+    cout<<"The value of *ptr: "<<*ptr<<endl;
     cout<<"The value of r: "<<r<<endl;
 
 

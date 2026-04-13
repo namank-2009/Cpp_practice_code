@@ -104,7 +104,8 @@ int main() {
     Base sliced = d2;   // Slicing (loses Derived-specific data)
     sliced.print("sliced: "); // Object slicing
     d2.print("d2: ");
-
+    
+    
     std::cout << "--- Polymorphic deletion ---\n";
     Base* poly = new Derived();
     delete poly;        // Should call both destructors safely

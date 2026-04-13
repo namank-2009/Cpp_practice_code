@@ -15,14 +15,17 @@ public:
         std::strcpy(data, other.data);
         std::cout << "Copy constructor for " << data << std::endl;
     }
+
     MyString(MyString&& other) noexcept : data(other.data) {
         other.data = nullptr;
         std::cout << "Move constructor\n";
     }
+
     ~MyString() {
         std::cout << "Destructor for " << (data ? data : "null") << std::endl;
         delete[] data;
     }
+    
     void print() const {
         std::cout << "MyString: " << (data ? data : "null") << std::endl;
     }

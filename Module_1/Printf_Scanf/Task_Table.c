@@ -21,6 +21,7 @@ int main() {
     printf("Enter details for Student 1\n");
     printf("Name: ");
     fgets(name1, sizeof(name1), stdin);
+    //This function finds the position of \n and replace with null terminator
     name1[strcspn(name1, "\n")] = '\0';
 
     printf("Age: ");

@@ -6,6 +6,7 @@
 // so we need to declare its static to pass the value
 int& funcReturningReference() {
     static int val = 42; // Static for safe demonstration; if not static, BAD!
+    
     return val;
 }
 

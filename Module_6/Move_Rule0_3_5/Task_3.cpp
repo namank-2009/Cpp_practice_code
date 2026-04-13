@@ -24,6 +24,7 @@ class MyString{
             delete[] data;
         }
     }
+    
     void display(const string label){
         cout<<"Calling by object "<<label<<" data: ";
         if(data)

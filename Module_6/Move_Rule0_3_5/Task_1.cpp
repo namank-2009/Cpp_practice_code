@@ -24,7 +24,6 @@ class MyString{
             delete[] str;
         }
 
-
         void display(){
             cout<<"Name: "<<str<<endl;
         }

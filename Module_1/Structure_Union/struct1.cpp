@@ -40,7 +40,7 @@ int main() {
     strcpy(staff[1].name, "Neha Verma");
     staff[1].employee_id = 202;
     staff[1].salary = 65000.75;
-
+                                
     strcpy(staff[2].name, "Rohit Kumar");
     staff[2].employee_id = 203;
     staff[2].salary = 72000.25;
