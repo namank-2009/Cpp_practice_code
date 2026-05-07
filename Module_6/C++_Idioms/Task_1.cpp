@@ -11,6 +11,7 @@ class FileWrapper{
         if (!file) throw std::runtime_error("Failed to open file");
         std::cout << "File opened: " << filename << "\n";
     }
+    
     ~FileWrapper(){
         if(file.is_open()){
             file.close();

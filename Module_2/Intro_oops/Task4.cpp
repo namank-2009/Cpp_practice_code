@@ -15,6 +15,7 @@ class DynamicArray{
         cout<<"Memory allocated in default constructor"<<endl;
     }
 
+    //Copy Constructor
     DynamicArray(const DynamicArray& other){
         size = other.size;
         data = new int[size];
@@ -43,7 +44,7 @@ int main(){
     arr.display();
 
     //Copy Constructor
-    DynamicArray arr1 = arr;
+    DynamicArray arr1 = arr; //Copy Constructor
     arr1.display();
     return 0;
 }

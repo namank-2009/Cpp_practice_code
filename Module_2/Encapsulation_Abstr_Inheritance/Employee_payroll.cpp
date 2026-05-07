@@ -100,7 +100,7 @@ class HourlyEmployee : public Employees{
 int main(){
     vector<Employees*>payroll;
 
-    payroll.push_back(new SalariedEmployee("Naman",68321,590009.00));
+    payroll.push_back(new SalariedEmployee("Naman",683210,590009.00));
     payroll.push_back(new HourlyEmployee("Kritika", 200000, 500, 12));
     
     for (const Employees* emp : payroll) {

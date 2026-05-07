@@ -4,7 +4,7 @@ using namespace std;
 class Printer{
     public:
     // Virtual function with a default parameter
-    virtual void print(const std::string& msg = "Base Printer"){
+    virtual void print(const std::string& msg){
         cout << "Printer prints: " << msg << endl;
     }
 
@@ -22,11 +22,11 @@ class ColorPrinter : public Printer{
 int main(){
     // Direct call on derived object
     ColorPrinter cp;
-    cp.print();
+    // cp.print();
 
      // Call via base class pointer
     Printer* p = &cp;
-    p->print();
+    p->print("h");
 
 //Default arguments = compile-time (depends on pointer/reference type)
 

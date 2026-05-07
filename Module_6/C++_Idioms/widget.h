@@ -13,6 +13,7 @@ class Widget{
         Widget(const Widget&) = delete;
         Widget& operator=(const Widget&) = delete;
 
+        // This function will never throw an exception
         Widget(Widget&&) noexcept;
         Widget& operator=(Widget&&) noexcept;
 

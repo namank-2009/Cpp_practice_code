@@ -6,7 +6,7 @@ class Fraction{
     int numerator;
     int denominator;
     public:
-    Fraction(int n=0, int d=1){
+        Fraction(int n=0, int d=1){
          if (d == 0) {
             cout << "Denominator cannot be zero. Setting to 1.\n";
             d = 1;
@@ -45,7 +45,7 @@ int main(){
     f1.print();
     cout << " and ";
     f2.print();
-    cout << endl;
+    cout << endl;   
 
     if (f1 == f2)
         cout << "They are equal\n";

@@ -53,7 +53,5 @@ int main(){
     delete t1;
     delete t3;
 
-
     Tracker::reportLeaks();
-
 }
